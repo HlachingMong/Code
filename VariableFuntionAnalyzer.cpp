@@ -120,16 +120,16 @@ void functionName(string f){
 
 }
 
-void functionDefination(string fd, string a, string r, string w){
+void functionDefinition(string fd, string a, string r, string w){
     
     if(fd=="void" && r=="return"){
         cout<<"Error! Return Type is void, void doesn't return anything"<<endl;
     }
     else if(fd=="void" && r!="return"){
-        cout<<"Valid Function Defination"<<endl;
+        cout<<"Valid Function Definition"<<endl;
     }
     else{
-        cout<<"Valid Function Defination"<<endl;
+        cout<<"Valid Function Definition"<<endl;
     }
     
 }
@@ -146,7 +146,7 @@ int main(){
         cout<<"Select options to check: "<<endl;
         cout<<"1. Check Variable Syntex."<<endl;
         cout<<"2. Check Function Syntex."<<endl;
-        cout<<"3. Check Function Defination"<<endl;
+        cout<<"3. Check Function Definition"<<endl;
         cout<<"4. Exit"<<endl;
         cin>>choice;
         int n;
@@ -168,9 +168,9 @@ int main(){
              functionName(f);
              break;
              case 3:
-             cout<<"Enter Function Defination: ";
+             cout<<"Enter Function : ";
              cin>>fd>>a>>r>>w;
-             functionDefination(fd, a, r, w);
+             functionDefinition(fd, a, r, w);
              break;
             case 4:
               n=1;
